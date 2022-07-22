@@ -1,0 +1,29 @@
+
+.header
+{
+    position:fixed;
+	top:0;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+}
+
+.first-section
+    {
+        background-image: url("https://i.pinimg.com/originals/de/9f/1c/de9f1c9257ee642ba959b64ed85e5668.png") ;
+        background-position: center center; background-size: cover;
+        
+        
+    }
+
+    .contenedor
+    {
+        height: 100%;
+        width: 100%;
+    }
+  
+
+   
