@@ -9,6 +9,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { SocialMediaComponent } from './components/social-media/social-media.component';
 import { LoginComponent } from './components/login/login.component';
 import { BannerComponent } from './components/banner/banner.component';
+import { AboutComponent } from './components/about/about.component';
+import { ExperienciaLaboralComponent } from './components/experiencia-laboral/experiencia-laboral.component';
+import { EducacionComponent } from './components/educacion/educacion.component';
 
 
 
@@ -20,6 +23,9 @@ import { BannerComponent } from './components/banner/banner.component';
     SocialMediaComponent,
     LoginComponent,
     BannerComponent,
+    AboutComponent,
+    ExperienciaLaboralComponent,
+    EducacionComponent,
   ],
   imports: [
     BrowserModule,

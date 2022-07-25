@@ -1,18 +1,20 @@
-<app-header class="header "></app-header>
+<app-header class="header"></app-header>
 <div fullpage id="fullpage2" [options]="config" (ref)="getRef($event)">
- 
-    <div class="section first-section d-flex">
-      <div class="d-flex flex contenedor justify-content-center">
-       
-        <app-banner class="banner align-self-center"></app-banner>
-      </div>
+  <div class="section first-section d-flex">
+    <div class="d-flex flex contenedor justify-content-center">
+      <app-banner class="banner align-self-center"></app-banner>
     </div>
-  
+  </div>
 
-  <div class="section d-flex"></div>
+  <div class="section d-flex">
+    <app-about></app-about>
+  </div>
 
-  <div class="section d-flex"></div>
+  <div class="section d-flex">
+    <app-experiencia-laboral></app-experiencia-laboral>
+  </div>
 
-  <div class="section d-flex"></div>
+  <div class="section d-flex">
+    <app-educacion></app-educacion>
+  </div>
 </div>
-
