@@ -1,0 +1,76 @@
+@media (min-width:1024px)
+{
+    .container
+{
+    
+    width: 100%;
+    height: 100%;
+}
+.info-card
+{
+    
+    font-weight: bold;
+}
+
+.mi-cara
+{
+   
+    border-radius: 15%;
+    max-height: 400px;
+}
+
+.about
+{
+    margin-left:200px ;
+    max-width: 1000px;
+}
+
+}
+
+
+
+@media (max-width:1024px)
+{
+    *
+    {
+        margin: 0;
+        padding: 0;
+    }
+    .container
+    {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mi-cara
+    {
+       
+        border-radius: 15%;
+        max-width: 200px;
+        margin-top: 50px;
+        
+    }
+
+    .about
+    {
+ 
+       margin: 40px;
+       margin-top:30px;
+       flex-shrink: 1;
+       
+    }
+
+
+    .info-card
+    {
+        flex-shrink: 1;
+        font-weight: bold;
+        margin-top: 100px;
+    }
+
+
+}
