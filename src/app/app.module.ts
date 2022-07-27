@@ -12,7 +12,9 @@ import { BannerComponent } from './components/banner/banner.component';
 import { AboutComponent } from './components/about/about.component';
 import { ExperienciaLaboralComponent } from './components/experiencia-laboral/experiencia-laboral.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
-
+import { SkillsComponent } from './components/skills/skills.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { fakeAsync } from '@angular/core/testing';
 
 
 @NgModule({
@@ -26,11 +28,20 @@ import { EducacionComponent } from './components/educacion/educacion.component';
     AboutComponent,
     ExperienciaLaboralComponent,
     EducacionComponent,
+    SkillsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFullpageModule
+    AngularFullpageModule,
+    NgCircleProgressModule.forRoot({
+      "showImage":true,
+      "showTitle":false,
+      "showSubtitle":false,
+      "showUnits": false,
+      "clockwise": false,
+      "responsive":true
+    })
     
   ],
   providers: [],
