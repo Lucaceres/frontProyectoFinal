@@ -15,6 +15,7 @@ import { EducacionComponent } from './components/educacion/educacion.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { fakeAsync } from '@angular/core/testing';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { fakeAsync } from '@angular/core/testing';
     ExperienciaLaboralComponent,
     EducacionComponent,
     SkillsComponent,
+    ProjectsComponent,
   ],
   imports: [
     BrowserModule,
