@@ -19,7 +19,7 @@ export class AppComponent {
       // fullpage options
       licenseKey: 'YOUR LICENSE KEY HERE',
       sectionsColor: ['#7BAABE', 'whitesmoke', '#7BAABE', 'whitesmoke', '#7BAABE'],
-      anchors: ['banner', 'about','experienciaLaboral', 'educacion',  'lastPage'],
+      anchors: ['banner', 'about','experienciaLaboral', 'educacion',  'skills','projects'],
       menu: '#menu',
       navigation: true,
 

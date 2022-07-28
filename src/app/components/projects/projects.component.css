@@ -1,0 +1,16 @@
+.container
+{
+    margin-top: 80px;
+    height: 100%;
+    width: 100%;
+}
+
+.projects-container
+{
+    padding-top:40px;
+}
+
+.description
+{
+    padding-right: 40px;
+}
