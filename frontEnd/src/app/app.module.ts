@@ -20,6 +20,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import {HttpClientModule} from '@angular/common/http';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { LogeoComponent } from './components/logeo/logeo.component'
+import { FormsModule } from '@angular/forms';
+import { NewExperienciaComponent } from './components/experiencia-laboral/new-experiencia.component';
+import { ExperienciaEditComponent } from './components/experiencia-laboral/experiencia-edit.component';
 
 @NgModule({
   declarations: [
@@ -37,12 +40,15 @@ import { LogeoComponent } from './components/logeo/logeo.component'
     FooterComponent,
     PortfolioComponent,
     LogeoComponent,
+    NewExperienciaComponent,
+    ExperienciaEditComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFullpageModule,
     HttpClientModule,
+    FormsModule,
     NgCircleProgressModule.forRoot({
       "showImage":true,
       "showTitle":false,

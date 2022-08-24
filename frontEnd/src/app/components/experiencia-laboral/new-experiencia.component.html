@@ -1,0 +1,22 @@
+<div class="container d-flex flex-column justify-content-center">
+    
+    <div>
+        <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+            <div class="form-group">
+                <label for="nombreExp">Nombre</label>
+                <input type="text" class="form-control" id="nombreExp" name="nombreExp" [(ngModel)]="nombreExp" required>
+            </div>
+
+            <div class="form-group">
+                <label for="tiempoExp">Tiempo</label>
+                <input type="text" class="form-control" id="tiempoExp" name="tiempoExp" [(ngModel)]="tiempoExp" required>
+            </div>
+
+            <div class="form-group">
+                <label for="descripcionExp">Descripcion</label>
+                <input type="text" class="form-control" id="descripcionExp" name="descripcionExp" [(ngModel)]="descripcionExp" required>
+            </div>
+            <button class="btn btn-outline-dark me-2">Agregar experiencia</button>
+        </form>
+    </div>
+  </div>
