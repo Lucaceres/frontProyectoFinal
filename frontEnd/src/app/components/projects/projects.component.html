@@ -1,4 +1,4 @@
-<div class="container d-flex flex-column">
+<!--<div class="container d-flex flex-column">
   <p class="display-3 align-self-start">Projects</p>
   <div class="flex-grow-1 projects-container">
     <div id="first-project">
@@ -13,4 +13,35 @@
       
     </div>
   </div>
+</div>
+-->
+<div class="container d-flex flex-column justify-content-center">
+  <div>
+  <button type="button" class="btn btn-outline-dark me-2" routerLink="/nuevoproyecto">Nuevo Proyecto</button>
+</div>
+
+  <ul>
+    
+    <li *ngFor="let proyecto of proyectos">
+     <div class="d-flex">
+      <p class="display-1">{{proyecto.titulo}}</p>
+      <button class="btn btn-secondary" routerLink="/proyectoedit/{{proyecto.id}}"><i class="bi bi-pen-fill"></i>
+        EDITAR
+      </button>
+        
+        <button class="modifier btn btn-danger" (click)="delete(proyecto.id)"><i class="bi bi-trash-fill"></i>BORRAR</button>
+    </div>
+    
+      
+      <p class="fs-5">
+        {{proyecto.descripcion}}
+      </p>
+<!--todo-->
+      <a href={{proyecto.link}}>
+        {{proyecto.link}}
+    </a>
+    </li>
+  </ul>
+  
+   
 </div>

@@ -11,7 +11,7 @@ import { ExpLabServiceService } from 'src/app/service/exp-lab-service.service';
 export class NewExperienciaComponent implements OnInit {
   nombreExp:String ='';
   tiempoExp:String = '';
-  descripcionExp:String=''
+  descripcionExp:String='';
   constructor(private ExpService:ExpLabServiceService, private router:Router) { }
   
   ngOnInit(): void {
