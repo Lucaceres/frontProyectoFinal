@@ -23,6 +23,8 @@ import { LogeoComponent } from './components/logeo/logeo.component'
 import { FormsModule } from '@angular/forms';
 import { NewExperienciaComponent } from './components/experiencia-laboral/new-experiencia.component';
 import { ExperienciaEditComponent } from './components/experiencia-laboral/experiencia-edit.component';
+import { NewProjectComponent } from './components/projects/new-project.component';
+import { ProyectoEditComponent } from './components/projects/proyecto-edit.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +44,8 @@ import { ExperienciaEditComponent } from './components/experiencia-laboral/exper
     LogeoComponent,
     NewExperienciaComponent,
     ExperienciaEditComponent,
+    NewProjectComponent,
+    ProyectoEditComponent,
   ],
   imports: [
     BrowserModule,
