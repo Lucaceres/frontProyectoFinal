@@ -1,3 +1,4 @@
+<!--
 <div class="container d-flex flex-column justify-content-center">
   <ul>
     <li>
@@ -25,4 +26,35 @@
         </p>
       </li>
   </ul>
+</div>
+-->
+<div class="container d-flex flex-column justify-content-center">
+  <div>
+  <button type="button" class="btn btn-outline-dark me-2" routerLink="/nuevaeducacion">Agregar Educacion</button>
+</div>
+
+  <ul>
+    
+    <li *ngFor="let educacion of educaciones">
+     <div class="d-flex">
+      <p class="display-1">{{educacion.grado}}</p>
+      <button class="btn btn-secondary" routerLink="/editeducacion/{{educacion.id}}"><i class="bi bi-pen-fill"></i>
+        EDITAR
+      </button>
+        
+        <button class="modifier btn btn-danger" (click)="delete(educacion.id)"><i class="bi bi-trash-fill"></i>BORRAR</button>
+    </div>
+    
+      
+      <p class="fs-5">
+        ({{educacion.anioInicio}}-{{educacion.anioFin}})
+      </p>
+
+      <p class="fs-5">
+        {{educacion.descripcion}}
+      </p>
+    </li>
+  </ul>
+  
+   
 </div>
