@@ -1,0 +1,27 @@
+<div class="container d-flex flex-column justify-content-center" *ngIf="educacion">
+    
+    <div>
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+            <div class="form-group">
+                <label for="grado">grado</label>
+                <input type="text" class="form-control" id="grado" name="grado" [(ngModel)]="educacion.grado" required>
+            </div>
+
+            <div class="form-group">
+                <label for="anioInicio">Año Inicio</label>
+                <input type="text" class="form-control" id="anioInicio" name="anioInicio" [(ngModel)]="educacion.anioInicio" required>
+            </div>
+
+            <div class="form-group">
+                <label for="anioFin">Año finalizacion</label>
+                <input type="text" class="form-control" id="anioFin" name="anioFin" [(ngModel)]="educacion.anioFin" required>
+            </div>
+
+            <div class="form-group">
+                <label for="descripcion">Descripcion</label>
+                <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="educacion.descripcion" required>
+            </div>
+            <button class="btn btn-outline-dark me-2">Actualizar educacion</button>
+        </form>
+    </div>
+  </div>
