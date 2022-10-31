@@ -4,11 +4,13 @@ export class persona {
     id?:number;
     nombre:String;
     apellido:String;
+    acerca:String;
 
 
-    constructor(nombre:String,apellido:String)
+    constructor(nombre:String,apellido:String,acerca:String)
     {
         this.nombre=nombre;
         this.apellido=apellido;
+        this.acerca=acerca;
     }
 }

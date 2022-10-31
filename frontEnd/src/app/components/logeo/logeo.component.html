@@ -6,17 +6,17 @@
             class="img-fluid" alt="Phone image">
         </div>
         <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
-          <form>
-            <!-- Email input -->
+          <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+            <!-- Usuario input -->
             <div class="form-outline mb-4">
-              <input type="email" id="form1Example13" class="form-control form-control-lg" />
-              <label class="form-label" for="form1Example13">Email</label>
+              <input type="text" id="nombreUsuario" name="nombreUsuario" class="form-control form-control-lg" [(ngModel)]="nombreUsuario" required />
+              <label class="form-label" for="nombreUsuario">Usuario</label>
             </div>
   
             <!-- Password input -->
             <div class="form-outline mb-4">
-              <input type="password" id="form1Example23" class="form-control form-control-lg" />
-              <label class="form-label" for="form1Example23">Contraseña</label>
+              <input type="password" id="passUsuario" class="form-control form-control-lg" name="passUsuario" [(ngModel)]="passUsuario" required />
+              <label class="form-label" for="passUsuario">Contraseña</label>
             </div>
   
             

@@ -27,6 +27,7 @@ import { NewProjectComponent } from './components/projects/new-project.component
 import { ProyectoEditComponent } from './components/projects/proyecto-edit.component';
 import { NewEducacionComponent } from './components/educacion/new-educacion.component';
 import { EditEducacionComponent } from './components/educacion/edit-educacion.component';
+import { CookieService } from 'ngx-cookie-service';
 
 @NgModule({
   declarations: [
@@ -67,7 +68,7 @@ import { EditEducacionComponent } from './components/educacion/edit-educacion.co
     })
     
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

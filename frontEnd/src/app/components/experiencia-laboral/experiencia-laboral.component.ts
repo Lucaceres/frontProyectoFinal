@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Experiencia } from 'src/app/model/experiencia.model';
 import { ExpLabServiceService } from 'src/app/service/exp-lab-service.service';
+import { TokenService } from 'src/app/service/token.service';
 
 @Component({
   selector: 'app-experiencia-laboral',
@@ -10,12 +11,13 @@ import { ExpLabServiceService } from 'src/app/service/exp-lab-service.service';
 export class ExperienciaLaboralComponent implements OnInit {
 
     experiencias:Experiencia[] = [];
-
-
-  constructor(private expService:ExpLabServiceService) { }
+   
+    
+  constructor(private expService:ExpLabServiceService,private token: TokenService) { }
 
   ngOnInit(): void {
     this.cargarExperiencia()
+    
   }
   cargarExperiencia():void{
     this.expService.list().subscribe(data => {this.experiencias = data;})

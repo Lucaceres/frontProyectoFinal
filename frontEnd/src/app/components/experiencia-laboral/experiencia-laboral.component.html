@@ -1,6 +1,6 @@
 <div class="container d-flex flex-column justify-content-center">
   <div>
-  <button type="button" class="btn btn-outline-dark me-2" routerLink="/nuevaexp">Nueva Experiencia</button>
+  <button  type="button" class="btn btn-outline-dark me-2" routerLink="/nuevaexp">Nueva Experiencia</button>
 </div>
 
   <ul>
@@ -8,11 +8,11 @@
     <li *ngFor="let exp of experiencias">
      <div class="d-flex">
       <p class="display-1">{{exp.nombreExp}}</p>
-      <button class="btn btn-secondary" routerLink="/expedit/{{exp.id}}"><i class="bi bi-pen-fill"></i>
+      <button  class="btn btn-secondary" routerLink="/expedit/{{exp.id}}"><i class="bi bi-pen-fill"></i>
         EDITAR
       </button>
         
-        <button class="modifier btn btn-danger" (click)="delete(exp.id)"><i class="bi bi-trash-fill"></i>BORRAR</button>
+        <button  class="modifier btn btn-danger" (click)="delete(exp.id)"><i class="bi bi-trash-fill"></i>BORRAR</button>
     </div>
     
       <p class="display-6">({{exp.tiempoExp}})</p>
