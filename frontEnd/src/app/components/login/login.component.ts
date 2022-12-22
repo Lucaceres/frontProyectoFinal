@@ -18,7 +18,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
     //Valido si tiene el token, eso quiere decir que la sesion ya esta iniciada
    
-   console.log()
+   
     if(this.tokenService.getToken())
     {
       this.isLogged=true;

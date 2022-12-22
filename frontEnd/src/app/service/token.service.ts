@@ -45,11 +45,13 @@ public setAuthorities(authorities:string[]):void{
 }
 
 public getAuthorities():string[]{
-  this.roles = [];
-  if(sessionStorage.getItem(AUTHORITIES_KEY))
+  
+  
+  if( sessionStorage.getItem(AUTHORITIES_KEY))
   {
+    this.roles=[];
     JSON.parse(sessionStorage.getItem(AUTHORITIES_KEY)).forEach((authority:any) => {
-      this.roles.push(authority.authority);
+      this.roles.push(authority);
     });
   }
   return this.roles;

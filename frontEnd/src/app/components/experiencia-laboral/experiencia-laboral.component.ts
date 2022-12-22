@@ -9,14 +9,18 @@ import { TokenService } from 'src/app/service/token.service';
   styleUrls: ['./experiencia-laboral.component.css']
 })
 export class ExperienciaLaboralComponent implements OnInit {
-
+    isAdmin=false;
     experiencias:Experiencia[] = [];
    
     
   constructor(private expService:ExpLabServiceService,private token: TokenService) { }
 
   ngOnInit(): void {
-    this.cargarExperiencia()
+    this.cargarExperiencia();
+    if(this.token.getAuthorities().includes("ROLE_ADMIN"))
+    {
+      this.isAdmin=true;
+    }
     
   }
   cargarExperiencia():void{
