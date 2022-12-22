@@ -10,14 +10,19 @@ import { TokenService } from 'src/app/service/token.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  isLogged=false;
 
 
-
-  constructor(private router:Router) { }
+  constructor(private router:Router,private tokenService:TokenService) { }
 
   ngOnInit(): void {
-    
-  
+    //Valido si tiene el token, eso quiere decir que la sesion ya esta iniciada
+   
+   console.log()
+    if(this.tokenService.getToken())
+    {
+      this.isLogged=true;
+    }
     
   }
 
@@ -26,5 +31,11 @@ export class LoginComponent implements OnInit {
   login()
   {
     this.router.navigate(['/login'])
+  }
+
+  logOut()
+  {
+    this.tokenService.logOut();
+    
   }
 }

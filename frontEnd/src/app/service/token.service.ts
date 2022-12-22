@@ -1,5 +1,6 @@
 import { Token } from '@angular/compiler';
 import { Injectable } from '@angular/core';
+import { BrowserDynamicTestingModule } from '@angular/platform-browser-dynamic/testing';
 import {CookieService} from 'ngx-cookie-service';
 
 const TOKEN_KEY = 'authToken';
@@ -56,5 +57,7 @@ public getAuthorities():string[]{
 
 public logOut():void{
   window.sessionStorage.clear();
+  this.cookieService.deleteAll();
+  window.location.reload();
 }
 }

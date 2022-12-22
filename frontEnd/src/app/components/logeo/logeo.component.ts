@@ -21,13 +21,13 @@ errMsj: string;
   constructor(private router:Router, private tokenService:TokenService, private authService:AuthService) { }
 
   ngOnInit(): void {
-    /*
+    
     if(this.tokenService.getToken())
     {
       this.isLogged = true;
       this.isLogginfail = false;
       this.roles = this.tokenService.getAuthorities();
-    }*/
+    }
   }
 
   onLogin():void{
