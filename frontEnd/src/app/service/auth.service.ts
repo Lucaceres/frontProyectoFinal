@@ -11,7 +11,7 @@ import { UsuarioInfoResponse } from '../model/usuario-info-response';
 })
 export class AuthService {
 
-authURL = "http://localhost:8080/api/auth"
+authURL = "https://backend-proyecto-final.onrender.com/api/auth"
 
   constructor(private httpClient:HttpClient,private cookie:CookieService) { }
 

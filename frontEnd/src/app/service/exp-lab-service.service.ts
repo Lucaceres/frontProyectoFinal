@@ -7,7 +7,7 @@ import { Experiencia } from '../model/experiencia.model';
   providedIn: 'root'
 })
 export class ExpLabServiceService {
-  URLxp = 'http://localhost:8080/api/explab/'
+  URLxp = 'https://backend-proyecto-final.onrender.com/api/explab/'
 
   constructor(private httpClient:HttpClient) { }
 

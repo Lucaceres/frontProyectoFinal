@@ -11,7 +11,7 @@ const httpOptions = {
 })
 
 export class PersonaService {
-  URL = 'http://localhost:8080/api/persona/';
+  URL = 'https://backend-proyecto-final.onrender.com/api/persona/';
 
   constructor(private http: HttpClient) {}
   
